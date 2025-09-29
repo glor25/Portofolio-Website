@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juanita Gloriann Bakara - Portofolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            --color-primary: #2E7D32; 
+            --color-secondary: #81C784;
+            --color-text: #2c3e50; 
+            --color-background: #fcfcfc;
+            --color-light: #E8F5E9; 
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        .hero-background {
+            background-color: var(--color-primary);
+            background-image: linear-gradient(135deg, var(--color-primary) 0%, #43A047 100%);
+            border-bottom-left-radius: 4rem;
+            border-bottom-right-radius: 4rem;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--color-secondary);
+        }
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            scroll-margin-top: 5rem; 
+        }
+
+        .text-primary { color: var(--color-primary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header id="header" class="sticky top-0 z-20 bg-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <a href="#home" class="text-lg font-bold text-primary">Portofolio</a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out">About Me</a>
+                    <a href="#education" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out">Education</a>
+                    <a href="#experience" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out">Experience</a>
+                    <a href="#portofolio" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out">My Portofolio</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out">Contact</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button class="text-[--color-text] hover:text-primary">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+
+        <section id="home" class="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+
+            <div class="absolute inset-0 bg-gradient-to-br from-[--color-primary] via-[#43A047] to-[--color-secondary] transform rotate-3 scale-105"></div>
+            <div class="absolute inset-0 bg-gradient-to-tl from-transparent via-white/10 to-transparent"></div>
+            
+            <div class="absolute top-10 right-10 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
+            <div class="absolute bottom-20 left-10 w-24 h-24 bg-[--color-secondary]/30 rounded-full blur-lg"></div>
+            <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white/15 transform rotate-45"></div>
+            
+            <div class="relative z-10 max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                    <div class="text-center lg:text-left">
+                        <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border border-white/20">
+                            <div class="inline-block px-4 py-2 bg-[--color-secondary] text-[--color-text] rounded-full text-sm font-semibold mb-6">
+                                👋 Welcome to My Portofolio
+                            </div>
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-[--color-primary] to-[--color-secondary] bg-clip-text text-transparent leading-tight">
+                                Juanita Gloriann Bakara
+                            </h1>
+                            <p class="text-2xl sm:text-3xl font-bold text-[--color-primary] mb-4">
+                                Computer Science Student
+                            </p>
+                            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                                With a passion for Computer Science and Blockchain, I am committed to continuously innovating and building impactful technologies that uphold trust and efficiency in the digital ecosystem. I am driven to seek opportunities to apply my expertise professionally and contribute to building and strengthening a resilient digital ecosystem.
+                            </p>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <a href="#portofolio" class="group px-8 py-4 bg-gradient-to-r from-[--color-primary] to-[#43A047] text-white font-bold rounded-2xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
+                                    <span class="flex items-center justify-center gap-2">
+                                        View My Work
+                                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#contact" class="px-8 py-4 bg-white/90 text-[--color-primary] font-bold rounded-2xl border-2 border-[--color-primary] hover:bg-[--color-primary] hover:text-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
+                                    Get In Touch
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center lg:justify-end">
+                        <div class="relative">
+
+                            <div class="absolute inset-0 bg-gradient-to-br from-[--color-secondary] to-[--color-primary] rounded-3xl transform rotate-6 scale-105"></div>
+                            <div class="absolute inset-2 bg-white rounded-2xl"></div>
+                            
+                            <div class="relative w-80 h-80 sm:w-96 sm:h-96 bg-gradient-to-br from-[--color-primary] to-[--color-secondary] rounded-2xl p-3 shadow-2xl">
+                                <div class="w-full h-full bg-white rounded-xl overflow-hidden">
+                                    <img 
+                                        src="picture/pas foto.png" 
+                                        alt="Juanita Gloriann Bakara" 
+                                        class="w-full h-full object-cover"
+                                    >
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-primary mb-2">About Me</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+           <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 feature-card" style="border-left: 5px solid var(--color-secondary);">
+            <h3 class="text-2xl font-bold text-[--color-text] mb-4">Details About Me</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+            I am a passionate Computer Science student specializing in Blockchain Technology and Business. I have developed a strong expertise in Algorithms, Data Structures, Operating Systems, and Object Oriented Programming, forming the backbone of my technical skill set.
+        </p>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+            With a growing focus on blockchain, I am committed to exploring its transformative potential in building trustworthy, efficient, and innovative digital solutions. I aim to contribute to advancing secure systems and resilient digital ecosystems, where technology and business strategy converge to create real world impact.
+            </p>
+        
+            <h4 class="text-xl font-bold text-[--color-text] mb-3">Skills</h4>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">C/C++</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">HTML/CSS/JS</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">Python</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">SQL</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">Solidity</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">UI/UX</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">Problem Solving</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">Communication</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">Collaboration</span>
+                <span class="px-4 py-1 bg-primary text-white text-sm font-semibold rounded-full shadow-md">Creativity</span>
+            </div>
+        </div>
+    </div>
+
+        <section id="education" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-primary mb-2">Education</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="max-w-5xl mx-auto bg-white p-8 rounded-2xl shadow-2xl border-2 border-primary border-opacity-20">
+                <div class="flex flex-col md:flex-row items-start gap-8">
+
+                    <div class="p-4 bg-secondary rounded-xl flex-shrink-0 shadow-lg">
+                        <img src="picture/Logo binus.png" alt="Logo Universitas Saya" class="w-10 h-10 object-contain">
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-[--color-text] mb-1">Bachelor of Computer Science</h3>
+                        <p class="text-xl font-medium text-gray-700 mb-2">Bina Nusantara University</p>
+                        <p class="text-sm font-semibold text-primary mb-4">2023 - Present</p>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            My studies in Computer Science have provided me with a solid foundation in key areas including Algorithms, Data Structures, Operating Systems, Computer Networks, and Object Oriented Programming. 
+                            <br> On this background, I am directing my specialization toward Blockchain Technology and Business to explore its technical and entrepreneurial applications.
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-1 bg-gray-200 text-[--color-text] text-sm font-semibold rounded-full border border-gray-400">IPK: 3.58/4.0</span>
+                            <span class="px-4 py-1 bg-green-600 text-white text-sm font-semibold rounded-full shadow-md">Active Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 bg-light">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-primary mb-2">Experience</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-10">
+
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-xl feature-card">
+                    <div class="flex items-start gap-6">
+                        <div class="p-3 bg-secondary rounded-full flex-shrink-0 shadow-lg">
+                            <i data-lucide="award" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-secondary mb-1">2025</p>
+                            <h3 class="text-xl font-semibold text-[--color-text] mb-2">Solana Allstars Campus Meetup</h3>
+                            <p class="text-gray-700 font-medium mb-3">Introduction To Crypto Investment And Its Career Pathways Workshop</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                I contributed by testing Solana based applications such as Solflare. My main responsibilities were exploring their functionality, identifying usability issues, and providing feedback to improve the overall user experience, while also studying opportunities in the Web3 ecosystem.
+                            </p>
+                            <div class="mb-4 grid grid-cols-3 gap-2">
+                            <img src="picture/Solana.jpg" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <section id="portofolio" class="py-16 px-4 sm:px-6 lg:px-8 bg-light">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-primary mb-2">My Portofolio</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/algo1.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/algo2.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">Algorithm and Programming</h3>
+                    <p class="text-gray-600 text-sm mb-4">Implementation of C/C++ programming in case studies involving data structure concepts</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">C/C++</span>
+                    </div>
+                    <a href="https://github.com/glor25/Algorithm-and-Programming" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/Wili1.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/Wili2.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/Wili3.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">Wilify - UI/UX Prototyping and Website</h3>
+                    <p class="text-gray-600 text-sm mb-4">Project focused on UI/UX prototyping and website development</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">UI/UX</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Figma</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">HTML/CSS/JS</span>
+                    </div>
+                    <a href="https://github.com/glor25/Wilify" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/HCI1G.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/HCIG2.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/HCIG3.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">BeEats - UI/UX Prototyping</h3>
+                    <p class="text-gray-600 text-sm mb-4">Group Project focused on UI/UX prototyping developing a healthy and affordable recipe application</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">UI/UX</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Figma</span>
+                    </div>
+                    <a href="https://github.com/glor25/BeEats" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/AI.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">AI Emotion Text Detector</h3>
+                    <p class="text-gray-600 text-sm mb-4">Group project building AI system for detecting emotions and mental states from English text</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Artificial Intelligence</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Python</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Javascript</span>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1rUwJXZCU8D9mC4GpEON9H2zXTNLxL_24?usp=sharing" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/CN1.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/CN2.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/CN3.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">Binus - Computer Network</h3>
+                    <p class="text-gray-600 text-sm mb-4">Project about Networking Media/Topology,IP Addressing & Subnetting, Routing, Application Layer</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Cisco</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">IP Addressing</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Routing</span>
+                    </div>
+                    <a href="https://github.com/glor25/Binus-Computer_Network" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/Research.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">Research Methodology</h3>
+                    <p class="text-gray-600 text-sm mb-4">Research in Addressing the Role and Opportunities of Blockchain Implementation to Improve Data Security in Digital Transformation</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Blockchain</span>
+                    </div>
+                    <a href="https://github.com/glor25/Research-Methodology" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-xl feature-card">
+                    <div class="mb-4 grid grid-cols-3 gap-2">
+                        <img src="picture/SE1.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/SE2.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                        <img src="picture/SE3.png" alt="Preview 1" class="w-full h-24 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-lg font-semibold text-[--color-text] mb-2">E-Vision - Software Engineering</h3>
+                    <p class="text-gray-600 text-sm mb-4">Group Project focused on UI/UX prototyping and Software Engineering, developing a business application for learning and networking</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">UI/UX</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Figma</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">HTML</span>
+                        <span class="px-3 py-1 bg-gray-300 text-[--color-text] text-xs font-medium rounded-full">Javascript</span>
+                    </div>
+                    <a href="https://github.com/glor25/E-Vision_Software-Engineering" class="w-full py-2 bg-secondary text-[--color-text] font-semibold rounded-lg hover:bg-[#66BB6A] transition duration-300 flex items-center justify-center space-x-2 shadow-md">
+                        <span>View Project</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+        </section>
+
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-primary mb-2">Contact Me</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-10 rounded-2xl shadow-2xl border-2 border-secondary border-opacity-30 text-center">
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                    I’m eager to explore new opportunities and take part in exciting projects.<br>
+                    If you have any inquiries or ideas to share, don’t hesitate to contact me!
+                </p>
+
+                <div class="space-y-4 mb-8">
+
+                    <div class="flex items-center justify-center space-x-3 text-[--color-text]">
+                        <i data-lucide="mail" class="w-6 h-6 text-primary"></i>
+                        <a href="mailto:ryanthadeus@gmail.com" class="hover:text-primary transition duration-150 font-medium">gloriabkrr@gmail.com</a>
+                    </div>
+
+                    <div class="flex items-center justify-center space-x-3 text-[--color-text]">
+                        <i data-lucide="phone" class="w-6 h-6 text-primary"></i>
+                        <span class="font-medium">+62 812-8568-3009</span>
+                    </div>
+
+                    <div class="flex items-center justify-center space-x-3 text-[--color-text]">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                        <span class="font-medium">DKI Jakarta, Indonesia</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/juanita-bakara-4a0b43383/" class="p-4 bg-light rounded-full hover:bg-primary hover:text-white transition duration-300 text-primary shadow-md transform hover:scale-110">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://github.com/glor25" class="p-4 bg-light rounded-full hover:bg-primary hover:text-white transition duration-300 text-primary shadow-md transform hover:scale-110">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-6 mt-20 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; 2025 Juanita Gloriann Bakara. All rights reserved.
+        </div>
+    </footer>
+    
+    <script>
+      
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            }
+
+            const homeLink = document.querySelector('a[href="#home"]');
+            if (homeLink) {
+                homeLink.classList.remove('text-gray-600');
+
+                homeLink.classList.add('text-primary', 'font-bold'); 
+            }
+        });
+
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+  
+                const sectionTop = section.offsetTop; 
+                if (window.scrollY >= sectionTop - 120) { 
+                    current = section.getAttribute('id');
+                }
+            });
+
+  
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold');
+                link.classList.add('text-gray-600', 'hover:text-primary');
+                
+
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-primary', 'font-bold');
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
